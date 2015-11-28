@@ -17,6 +17,10 @@ require "src/class-hello-kushimoto-speaker.php";
 require "src/class-hello-kushimoto-random-speaker.php";
 require "src/class-miyasan.php";
 
+if ( defined( 'WP_CLI' ) && WP_CLI ) {
+	require __DIR__ . '/src/class-kushimoto-cli.php';
+}
+
 
 /**
  * run plugin.
